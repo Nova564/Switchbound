@@ -1,0 +1,158 @@
+# Unreal Engine .gitignore - Optimisé pour le travail en équipe
+
+# ====================================
+# Fichiers Visual Studio
+# ====================================
+.vs/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+*.VC.db
+*.VC.VC.opendb
+
+# ====================================
+# Fichiers Rider (JetBrains)
+# ====================================
+.idea/
+*.sln.iml
+
+# ====================================
+# Dossiers générés par Unreal Engine
+# ====================================
+Binaries/
+Build/
+Intermediate/
+Saved/
+DerivedDataCache/
+
+# ====================================
+# Fichiers de build
+# ====================================
+*.target
+*.target.cs~
+
+# ====================================
+# Fichiers temporaires et cache
+# ====================================
+*.tmp
+*.log
+*.tlog
+*.obj
+*.pdb
+*.idb
+*.ilk
+*.exp
+*.lib
+*.exe
+*.dll
+*.manifest
+*.pch
+*.ipch
+*.opensdf
+*.sdf
+*.aps
+*.autosave
+
+# ====================================
+# Fichiers de crash et debug
+# ====================================
+*.crashdump
+*.dmp
+Crashes/
+
+# ====================================
+# Fichiers locaux utilisateur
+# ====================================
+# Les fichiers .ini dans Saved/ contiennent les préférences locales
+Saved/Config/
+Saved/Logs/
+Saved/Screenshots/
+Saved/Cooked/
+Saved/StagedBuilds/
+Saved/Autosaves/
+Saved/Backup/
+Saved/Collections/
+
+# ====================================
+# Content à ignorer (selon vos besoins)
+# ====================================
+# Starter Content (décommenter si vous ne l'utilisez pas)
+# Content/StarterContent/
+
+# Collections locales
+*.collection
+
+# ====================================
+# Plugins - Build uniquement
+# ====================================
+# On garde les sources des plugins mais pas leurs builds
+Plugins/*/Binaries/
+Plugins/*/Intermediate/
+
+# ====================================
+# Fichiers macOS
+# ====================================
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# ====================================
+# Fichiers Windows
+# ====================================
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# ====================================
+# Fichiers Linux
+# ====================================
+*~
+.directory
+
+# ====================================
+# Fichiers spécifiques au projet
+# ====================================
+# Fichiers de build packagés
+*.pak
+*.ucas
+*.utoc
+
+# Fichiers de localisation compilés (peuvent être regénérés)
+Content/Localization/*/Archives/
+Content/Localization/*/Metadata/
+
+# DDC (Derived Data Cache) - peut être volumineux
+DerivedDataCache/
+
+# ====================================
+# Fichiers à NE PAS ignorer (important!)
+# ====================================
+# Ces fichiers DOIVENT être versionnés
+# Content/ - vos assets
+# Source/ - votre code source
+# Config/ - fichiers de configuration du projet (sauf DefaultEditorPerProjectUserSettings.ini)
+# *.uproject - le fichier du projet
+# *.umap - vos maps/niveaux
+# *.uasset - vos assets Unreal
+
+# Ignorer les settings utilisateur de l'éditeur
+Config/UserSettings.ini
+Config/DefaultEditorPerProjectUserSettings.ini
+
+# ====================================
+# Build Tools et Scripts
+# ====================================
+*.generated.h
+*.generated.cpp
+
+# ====================================
+# Optionnel - Gros fichiers Media
+# ====================================
+# Si vous avez de très gros fichiers média, utilisez Git LFS
+# Décommenter si nécessaire:
+# *.mp4
+# *.mov
+# *.wav
+# *.mp3
